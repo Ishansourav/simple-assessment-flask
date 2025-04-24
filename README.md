@@ -44,6 +44,11 @@ simple-assessment/
 ├── utils/
 │   ├── file_handler.py  # Handles CSV/JSON file uploads and parsing
 │   └── data_processor.py # Contains functions for data calculation
+├── assest/
+│   ├── 1.png             # image -png format
+|   ├── 2.png             # image
+|   ├── 3.png             # image 
+│   └── 4.png             
 ├── requirements.txt      # Python dependencies
 ├── Procfile              # For Heroku (optional)
 ├── .gitignore
