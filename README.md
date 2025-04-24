@@ -20,13 +20,13 @@ A lightweight Flask-based web app that enables users to upload CSV or JSON files
 
 ---
 
-## 🧪 Tech Stack
+## 💻 Language & Tool Roles
 
-| Layer            | Tools                             |
+| Layer            | Tools                              |
 |------------------|------------------------------------|
 | Backend          | Flask 3.0.2, Pandas                |
 | Frontend         | HTML5, CSS3, JavaScript            |
-| Deployment       | Vercel                             |
+| Deployment       | Vercel, Heroku                     |
 | Others           | Apache 2.0 License                 |
 
 ---
@@ -41,6 +41,9 @@ simple-assessment/
 ├── static/
 │   ├── style.css         # Styles
 │   └── script.js         # JS interactivity
+├── utils/
+│   ├── file_handler.py  # Handles CSV/JSON file uploads and parsing
+│   └── data_processor.py # Contains functions for data calculation
 ├── requirements.txt      # Python dependencies
 ├── Procfile              # For Heroku (optional)
 ├── .gitignore
@@ -73,6 +76,13 @@ simple-assessment/
       |   - Raw + Computed     |
       +------------------------+
 ```
+---
+
+## 🔧 System Layers
+
+- Input Layer: File upload (CSV/JSON)
+- Processing Layer: Data processing (Pandas)
+- Output Layer: Dynamic Table Display & Calculation Results
 
 ---
 
@@ -103,6 +113,17 @@ Supports alternative deployment on Heroku, Render, Deta, PythonAnywhere.
 
 ---
 
+<div class="section">
+      <h2>🧠 Strategic Recommendations</h2>
+      <ul>
+            <li>Implement caching for faster data processing</li>
+            <li>Enhance error handling and user feedback</li>
+            <li>Consider adding a database for larger-scale data storage</li>
+    </ul>
+  </div>
+
+---
+
 ## 🤝 Contributing
 
 1. Fork the repo
@@ -124,3 +145,5 @@ This project is licensed under the Apache 2.0 License. See the LICENSE file for 
 - Flask & Pandas Community
 - Vercel for hosting
 - HTML/CSS/JS open-source resources
+
+---
