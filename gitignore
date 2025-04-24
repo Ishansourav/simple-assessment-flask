@@ -1,0 +1,33 @@
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+*.sqlite3
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Mac & Linux system files
+.DS_Store
+Thumbs.db
+
+# VSCode & IDEs
+.vscode/
+.idea/
+
+# Deployment
+*.zip
+setup.sh
+
+# Flask
+instance/
+*.db
+
+# Node/Vercel (if any)
+.vercel/
+node_modules/
