@@ -6,7 +6,7 @@
 
 A lightweight Flask-based web app that enables users to upload CSV or JSON files, process the data using Pandas, and generate a short report with computed Alpha, Beta, and Charlie values.
 
-🔗 Live Demo: [https://simple-assessment-flask.vercel.app](https://simple-assessment-flask.vercel.app)
+🔗 Live Demo: [https://simple-assessment-flask.onrender.com/](https://simple-assessment-flask.onrender.com/)
 
 ---
 
