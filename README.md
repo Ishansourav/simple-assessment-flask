@@ -112,7 +112,7 @@ flask run
 
 ## 🌍 Deployment
 
-Deployed on Vercel: [https://simple-assessment-flask.vercel.app](https://simple-assessment-flask.vercel.app)
+Deployed on Render: [https://simple-assessment-flask.onrender.com/](https://simple-assessment-flask.onrender.com/)
 
 Supports alternative deployment on Heroku, Render, Deta, PythonAnywhere.
 
