@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+/* Landing Page */
+.landing-page {
+    background-image: url(https://i.postimg.cc/QtNwJbP0/pexels-photo-248515.png);
+    background-size: cover;
+    min-height: 100vh;
+    color: #FFF;
+    position: relative;
+    text-align: center;
+}
+
+.landing-page .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.landing-page .text-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.landing-page .text-intro h2 {
+    font-size: 40px;
+}
+
+.landing-page .text-intro p {
+    margin: 25px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.landing-page .text-intro button {
+    background-color: #333;
+    color: #FFF;
+    width: 100px;
+    font-size: 13px;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.landing-page .text-intro button:hover {
+    color: #333;
+    background-color: #FFF;
+}
+
+/* Development Section */
+.development {
+    text-align: center;
+    background-color: #EAEAEA;
+    padding: 40px 0;
+}
+
+.development h2 {
+    margin-bottom: 30px;
+}
+
+.development p {
+    font-size: 15px;
+    column-count: 2;
+}
+
+/* Boxes Section */
+.fields {
+    background-color: #333;
+    padding: 30px 0;
+    color: #FFF;
+}
+
+.fields .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fields .boxes .box {
+    width: 32%;
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.fields .boxes .box img {
+    max-width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.fields .boxes .box h3 {
+    margin: 20px 0 30px;
+}
+
+.fields .boxes .box p {
+    font-size: 14px;
+    padding: 0 30px 30px;
+}
+
+/* Handle Section */
+.handle {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.handle h2 {
+    margin-bottom: 30px;
+}
+
+.handle p {
+    font-size: 14px;
+}
+
+/* Contact Us Section */
+.info {
+    display: flex;
+}
+
+.info .contact,
+.info .about {
+    padding: 40px;
+    color: #FFF;
+    text-align: center;
+    width: 50%;
+}
+
+.info .contact {
+    background-color: #2690D4;
+}
+
+.info .about {
+    background-color: #333;
+}
+
+.info h3 {
+    margin-bottom: 35px;
+}
+
+.info p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.info .contact span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.footer h4 {
+    font-size: 12px;
+    float: left;
+    font-weight: normal;
+}
+
+.footer h4:last-of-type {
+    float: right;
+}
+
+.footer h4 span {
+    color: #2690D4;
+}
+
+/* Table Styling with Glass Effect */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: rgba(30, 30, 60, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+    color: #FFF;
+    font-size: 16px;
+}
+
+th {
+    background-color: rgba(0, 45, 110, 0.9);
+    font-weight: bold;
+}
+
+td {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+tr:nth-child(even) td {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+tr:hover td {
+    background-color: rgba(0, 45, 110, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+/* Index and Value Column Highlighting */
+th.index, td.index,
+th.value, td.value {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #1E1E3C;
+    font-weight: bold;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+    table, th, td {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px 12px;
+    }
+}

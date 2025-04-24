@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Assessment</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://kit.fontawesome.com/95a02bd20d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Start Landing Page -->
+  <div class="landing-page">
+    <div class="overlay">
+      <div class="container">
+        <div class="text-intro">
+          <h2>Welcome to Simple Assessment</h2>
+          <p>Built with Flask 3.0.2, this app enables CSV/JSON file uploads, dynamic table rendering, and real-time calculations using Pandas.</p>
+          <a href="https://github.com/Ishansourav/simple-assessment-flask/tree/main" target="_blank" style="text-decoration: none;">
+            <button>
+              <i class="fab fa-github" style="margin-right: 8px;"></i>GitHub
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Landing Page -->
+
+  <div class="fields">
+    <div class="container">
+      <div class="boxes">
+        <div class="box">
+          <img src="https://i.postimg.cc/K4X04zcL/clement-helardot-95YRwf6CNw8-unsplash.jpg" alt="">
+          <h3>CSV File</h3>
+          <p>CSV (Comma-Separated Values) is a simple, text-based format for storing tabular data. It’s fast, human-readable, and widely used in Excel, databases, and data science workflows.</p>
+        </div>
+        <div class="box">
+          <img src="https://i.postimg.cc/C55THg5v/pexels-photo-261628.jpg" alt="">
+          <h3>JSon File</h3>
+          <p>JSON (JavaScript Object Notation) is a lightweight format for structured data—ideal for APIs, web apps, and data exchange across modern programming languages.</p>
+        </div>
+        <div class="box">
+          <img src="https://i.postimg.cc/tT3rwmZh/pexels-photo-265087.jpg" alt="">
+          <h3>Tech-stack & Features</h3>
+          <p>Built with Flask 3.0.2, this app handles CSV/JSON parsing using Pandas, renders dynamic tables, and performs calculations (Alpha, Beta, Charlie). Deployed on Heroku with Gunicorn, using HTML + Jinja2 and version-controlled on GitHub.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- File Upload Section -->
+  <div class="handle">
+    <div class="container">
+      <h2>CSV & JSON</h2>
+      <p>Upload a file to render Table 1 and compute Table 2.</p>
+      <input type="file" id="fileInput" accept=".csv, .json" style="display: none;" />
+      <button onclick="document.getElementById('fileInput').click()">Upload CSV/JSON</button>
+      <p>or drop supported files here</p>
+    </div>
+  </div>
+
+  <!-- Table Display Area -->
+  <div class="development" style="display: flex; justify-content: space-between;">
+    <div class="container" style="flex: 1; padding-right: 20px;">
+      <h2>Uploaded Data</h2>
+      <div id="table1-container"></div>
+    </div>
+    <!-- Results Section -->
+    <div class="container" style="flex: 1; padding-left: 20px;">
+      <h3>Computed Result</h3>
+      <div id="results-container">
+        <table id="table2" style="width: 100%; margin-top: 20px; display: none;">
+          <thead>
+            <tr><th>Category</th><th>Value</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Alpha</td><td id="alpha-value"></td></tr>
+            <tr><td>Beta</td><td id="beta-value"></td></tr>
+            <tr><td>Charlie</td><td id="charlie-value"></td></tr>
+          </tbody>
+        </table>
+        <br>
+        <p>These values are dynamically computed from the uploaded file using (Flask + Pandas).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <h4>Assessment by <span>MULAH</span></h4>
+      <h4>Project By <span>Sourav</span></h4>
+    </div>
+  </div>
+
+  <!-- Link JS -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
