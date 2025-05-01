@@ -58,7 +58,7 @@ simple-assessment/
 
 ---
 
-## 🧠 System Architecture (Text View)
+## 🧠 System Architecture 
 
 ```
       +------------------------+
